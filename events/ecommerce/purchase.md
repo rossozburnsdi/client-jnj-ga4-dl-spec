@@ -17,6 +17,8 @@ dataLayer.push({
     shipping: "<shipping>",
     tax: "<tax>",
     transaction_id: "<transaction_id>",
+    number_of_unique_items: "<number_of_unique_items>",
+    number_of_total_items: "<number_of_total_items>",
     value: "<value>"
   }
 });
@@ -33,4 +35,6 @@ dataLayer.push({
 |shipping|number|recommended|Shipping cost associated with a transaction.|`3.33`|`^\d\.\d\d$`|||0.00|
 |tax|number|recommended|Tax cost associated with a transaction.|`1.11`|`^\d\.\d\d$`|||0.00|
 |transaction_id|string|required|The unique identifier of a transaction.|`T12345`|
+|number_of_unique_items|number|required|Provides the total of unique items i.e. Products A & B have 1 item but C has 2 items. total items would equal 3.|`3`|
+|number_of_total_items|number|required|Provides the total of unique items i.e. Products A & B have 1 item but C has 2 items. total items would equal 4|`4`|
 |value|number|required|The monetary value of the event.|`7.77`|`^\d\.\d\d$`|||0.00|
